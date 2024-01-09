@@ -22,7 +22,6 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
     <style>
       .attribution {
         font-size: 11px;
@@ -69,14 +68,26 @@
               </ul>
               <div class="email">
                 <p class="email-header">Email address</p>
-                <input
-                  type="text"
-                  placeholder="email@company.com"
-                  class="form-control"
-                />
-                <button type="button" class="btn btn-primary">
-                  Subscribe to monthly newsletter
-                </button>
+                <form id="form">
+                  <div class="form-group">
+                    <label for="email">
+                      <input
+                        type="email"
+                        placeholder="email@company.com"
+                        class="form-control"
+                        id="email"
+                      />
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="button"
+                        onclick="showAlert()"
+                      >
+                        Subscribe to monthly newsletter
+                      </button></label
+                    >
+                  </div>
+                </form>
               </div>
             </div>
             <div class="col-6">
@@ -107,4 +118,5 @@
       >. Coded by <a href="https://github.com/KollerJacq">Jacqueline Koller</a>.
     </div>-->
   </body>
+  <script src="src/script.js"></script>
 </html>
