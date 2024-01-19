@@ -76,13 +76,9 @@
                         placeholder="email@company.com"
                         class="form-control"
                         id="email"
+                        onsubmit="isValidEmail()"
                       />
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        id="button"
-                        onclick="showAlert()"
-                      >
+                      <button type="button" class="btn btn-primary" id="button">
                         Subscribe to monthly newsletter
                       </button></label
                     >
@@ -104,11 +100,18 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <!--
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
--->
+    <div class="card-success hidden">
+      <img src="assets/images/icon-success.svg" alt="Icon success" />
+      <div class="success-content">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to ash@loremcompany.com.
+          <br />Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button class="btn btn-primary">Dismiss message</button>
+      </div>
+    </div>
     <!-- Success message end -->
 
     <!-- <div class="attribution">
